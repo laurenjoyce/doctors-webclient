@@ -1,0 +1,24 @@
+<h1>Create a new doctor!</h1>
+
+<%= form_tag "/doctors", method: :post do %>
+  <div>
+    <%= label_tag :first_name %>
+    <%= text_field_tag :first_name %>
+
+  </div>
+    <div>
+    <%= label_tag :last_name %>
+    <%= text_field_tag :last_name %>
+  </div>
+    <div>
+    <%= label_tag :practice %>
+    <%= text_field_tag :practice %>
+  </div>
+      <div>
+    <%= label_tag :university %>
+    <%= text_field_tag :university %>
+  </div>
+    <div>
+    <%= submit_tag "Create Doctor" %>
+  </div>
+<% end %>
